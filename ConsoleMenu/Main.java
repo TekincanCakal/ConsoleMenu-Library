@@ -15,6 +15,7 @@ public class Main {
         consoleMenu.show();
     }
     public void ShowMoney(){
+        consoleMenu.clear();
         System.out.println("Money: 50");
         System.out.println("Enter anything for back to main menu");
         Scanner scanner = new Scanner(System.in);
@@ -22,5 +23,6 @@ public class Main {
         if(answer.length() > 0){
             consoleMenu.transferTo(-1);
         }
+        scanner.close();
     }
 }
